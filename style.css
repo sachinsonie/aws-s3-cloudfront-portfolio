@@ -1,0 +1,150 @@
+/* Font & base layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: #e5e7eb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #020617;
+  border-radius: 16px;
+  padding: 28px 24px 32px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #1f2937;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #38bdf8;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+.tagline {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+/* Sections */
+section {
+  background-color: #020617;
+  border-radius: 12px;
+  padding: 18px 16px 20px;
+  margin-bottom: 18px;
+  border: 1px solid #1f2937;
+}
+
+section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #e5e7eb;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+/* Skills */
+.skills {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.skills li {
+  background-color: #020617;
+  border: 1px solid #1f2937;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+  text-align: center;
+  color: #e5e7eb;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #0b1120, #020617);
+  border-radius: 12px;
+  padding: 14px 12px 14px;
+  border: 1px solid #1f2937;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #38bdf8;
+}
+
+.project-card p {
+  font-size: 13px;
+  color: #d1d5db;
+}
+
+.project-card .tech {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Placeholder card style */
+.project-card.placeholder {
+  border-style: dashed;
+  border-color: #374151;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .container {
+    padding: 20px 14px 22px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  section {
+    padding: 14px 12px 16px;
+  }
+}
